@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
+import { Grid } from "@material-ui/core";
+import { useStyles } from "./styles";
 
 const NotFound = () => {
-  return(
-    <div>
+  const classes = useStyles();
+  return (
+    <Grid container component="main" className={classes.root}>
       Not Found
-    </div>
-  )
-}
+    </Grid>
+  );
+};
 
 export default NotFound;
